@@ -59,6 +59,7 @@ public final class TelaComprarProdutos extends javax.swing.JFrame {
         jTbProdutos1 = new javax.swing.JTable();
         jBtnAddCarrinho = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jCbCliente = new javax.swing.JComboBox<>();
         jPanel2 = new javax.swing.JPanel();
@@ -81,8 +82,9 @@ public final class TelaComprarProdutos extends javax.swing.JFrame {
         jBtnSair.setBackground(new java.awt.Color(0, 0, 255));
         jBtnSair.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 12)); // NOI18N
         jBtnSair.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnSair.setText("Sair");
+        jBtnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Sair.png"))); // NOI18N
         jBtnSair.setBorderPainted(false);
+        jBtnSair.setContentAreaFilled(false);
         jBtnSair.setOpaque(false);
         jBtnSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,9 +92,9 @@ public final class TelaComprarProdutos extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jBtnSair);
-        jBtnSair.setBounds(370, 600, 140, 23);
+        jBtnSair.setBounds(370, 600, 140, 109);
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Minha Lista de Compras", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 1, 11), new java.awt.Color(0, 0, 255))); // NOI18N
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Minha Lista de Compras", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 0, 255))); // NOI18N
         jPanel3.setOpaque(false);
         jPanel3.setLayout(null);
 
@@ -118,7 +120,7 @@ public final class TelaComprarProdutos extends javax.swing.JFrame {
         jBtnAddCarrinho.setBackground(new java.awt.Color(0, 0, 255));
         jBtnAddCarrinho.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 12)); // NOI18N
         jBtnAddCarrinho.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnAddCarrinho.setText("Adicionar produto ao meu carrinho");
+        jBtnAddCarrinho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/cart_add.png"))); // NOI18N
         jBtnAddCarrinho.setBorderPainted(false);
         jBtnAddCarrinho.setOpaque(false);
         jBtnAddCarrinho.addActionListener(new java.awt.event.ActionListener() {
@@ -127,14 +129,20 @@ public final class TelaComprarProdutos extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jBtnAddCarrinho);
-        jBtnAddCarrinho.setBounds(10, 500, 400, 23);
+        jBtnAddCarrinho.setBounds(190, 490, 40, 40);
         jPanel3.add(jLabel7);
         jLabel7.setBounds(105, 489, 0, 0);
 
-        jPanel1.add(jPanel3);
-        jPanel3.setBounds(10, 50, 423, 530);
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel2.setText("Adicionar item ao carrinho");
+        jPanel3.add(jLabel2);
+        jLabel2.setBounds(130, 470, 170, 14);
 
-        jLabel9.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 12)); // NOI18N
+        jPanel1.add(jPanel3);
+        jPanel3.setBounds(10, 50, 423, 540);
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 0, 255));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel9.setText("Cliente em atendimento: ");
@@ -151,7 +159,7 @@ public final class TelaComprarProdutos extends javax.swing.JFrame {
         jPanel1.add(jCbCliente);
         jCbCliente.setBounds(410, 10, 250, 19);
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Minha Lista de Compras", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 1, 11), new java.awt.Color(0, 0, 255))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Minha Lista de Compras", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 0, 255))); // NOI18N
         jPanel2.setOpaque(false);
         jPanel2.setLayout(null);
 
@@ -185,24 +193,24 @@ public final class TelaComprarProdutos extends javax.swing.JFrame {
         jPanel2.add(jBtnFinalCompra);
         jBtnFinalCompra.setBounds(220, 500, 190, 23);
 
-        jLabel4.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 255));
         jLabel4.setText("Valor Total:");
         jPanel2.add(jLabel4);
         jLabel4.setBounds(31, 470, 100, 16);
 
-        jLblTotal.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 12)); // NOI18N
+        jLblTotal.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLblTotal.setForeground(new java.awt.Color(0, 0, 255));
         jLblTotal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLblTotal.setText("0.00");
         jPanel2.add(jLblTotal);
-        jLblTotal.setBounds(301, 470, 100, 14);
+        jLblTotal.setBounds(301, 470, 100, 15);
 
-        jLabel5.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 255));
         jLabel5.setText("R$");
         jPanel2.add(jLabel5);
-        jLabel5.setBounds(241, 470, 40, 14);
+        jLabel5.setBounds(241, 470, 40, 15);
 
         jBtnCancelar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnCancelar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 12)); // NOI18N
@@ -223,7 +231,7 @@ public final class TelaComprarProdutos extends javax.swing.JFrame {
         jLabel8.setBounds(181, 534, 0, 0);
 
         jPanel1.add(jPanel2);
-        jPanel2.setBounds(450, 50, 423, 530);
+        jPanel2.setBounds(450, 50, 423, 540);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/madeira.jpg"))); // NOI18N
         jPanel1.add(jLabel1);
@@ -511,6 +519,7 @@ public final class TelaComprarProdutos extends javax.swing.JFrame {
     private javax.swing.JButton jBtnSair;
     private javax.swing.JComboBox<String> jCbCliente;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

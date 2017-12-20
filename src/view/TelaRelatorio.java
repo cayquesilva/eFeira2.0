@@ -134,8 +134,9 @@ public class TelaRelatorio extends javax.swing.JFrame {
 
         jBtnSair.setBackground(new java.awt.Color(0, 0, 255));
         jBtnSair.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnSair.setText("Sair");
+        jBtnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Sair.png"))); // NOI18N
         jBtnSair.setBorderPainted(false);
+        jBtnSair.setContentAreaFilled(false);
         jBtnSair.setOpaque(false);
         jBtnSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,7 +144,7 @@ public class TelaRelatorio extends javax.swing.JFrame {
             }
         });
         jPanelFundo.add(jBtnSair);
-        jBtnSair.setBounds(191, 330, 120, 23);
+        jBtnSair.setBounds(191, 330, 120, 109);
 
         jLblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/RendimentoAtual.png"))); // NOI18N
         jPanelFundo.add(jLblFundo);

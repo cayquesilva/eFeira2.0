@@ -52,7 +52,7 @@
                   <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
                     <EtchetBorder/>
                   </Border>
-                  <Font PropertyName="font" name="Copperplate Gothic Bold" size="12" style="0"/>
+                  <Font PropertyName="font" name="Tahoma" size="12" style="1"/>
                   <Color PropertyName="color" blue="ff" green="0" red="0" type="rgb"/>
                 </TitledBorder>
               </Border>
@@ -97,6 +97,9 @@
               <SubComponents>
                 <Component class="javax.swing.JTextField" name="jTxtVenda">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="10" style="0"/>
+                    </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
@@ -115,6 +118,9 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="jTxtNome">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="10" style="0"/>
+                    </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
@@ -132,6 +138,9 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="jTxtCompra">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="10" style="0"/>
+                    </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
@@ -168,6 +177,9 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="jTxtCodigo">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="10" style="0"/>
+                    </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
@@ -186,6 +198,9 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="jTxtQuantidade">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="10" style="0"/>
+                    </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
@@ -231,7 +246,10 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Novo"/>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/Imagens/Novo.png"/>
+                    </Property>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="opaque" type="boolean" value="false"/>
                   </Properties>
                   <Events>
@@ -254,7 +272,12 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Editar"/>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/Imagens/Editar.png"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="enabled" type="boolean" value="false"/>
                     <Property name="opaque" type="boolean" value="false"/>
                   </Properties>
                   <Events>
@@ -277,7 +300,12 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Cancelar"/>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/Imagens/Cancelar.png"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="enabled" type="boolean" value="false"/>
                     <Property name="opaque" type="boolean" value="false"/>
                   </Properties>
                   <Events>
@@ -300,7 +328,12 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Salvar"/>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/Imagens/Salvar.png"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="enabled" type="boolean" value="false"/>
                     <Property name="opaque" type="boolean" value="false"/>
                   </Properties>
                   <Events>
@@ -323,7 +356,12 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Excluir"/>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/Imagens/Excluir.png"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="enabled" type="boolean" value="false"/>
                     <Property name="opaque" type="boolean" value="false"/>
                   </Properties>
                   <Events>
@@ -347,7 +385,7 @@
                   <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
                     <EtchetBorder/>
                   </Border>
-                  <Font PropertyName="font" name="Copperplate Gothic Bold" size="12" style="0"/>
+                  <Font PropertyName="font" name="Tahoma" size="12" style="1"/>
                   <Color PropertyName="color" blue="ff" green="0" red="0" type="rgb"/>
                 </TitledBorder>
               </Border>
@@ -363,12 +401,12 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane1" alignment="1" pref="388" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" alignment="0" pref="388" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane1" alignment="0" pref="138" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" pref="137" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -414,7 +452,11 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Pesquisar"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagens/Pesquisar.png"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="contentAreaFilled" type="boolean" value="false"/>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -434,8 +476,12 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagens/Sair.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Sair"/>
             <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="contentAreaFilled" type="boolean" value="false"/>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -443,7 +489,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="110" y="470" width="200" height="-1"/>
+              <AbsoluteConstraints x="150" y="470" width="120" height="25"/>
             </Constraint>
           </Constraints>
         </Component>

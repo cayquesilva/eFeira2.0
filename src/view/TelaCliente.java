@@ -66,7 +66,7 @@ public class TelaCliente extends javax.swing.JFrame {
 
         jPanelGeral.setLayout(null);
 
-        jPanelRegistro.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Clientes Cadastrados", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12), new java.awt.Color(0, 0, 255))); // NOI18N
+        jPanelRegistro.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Clientes Cadastrados", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 0, 255))); // NOI18N
         jPanelRegistro.setOpaque(false);
 
         jPanel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -129,7 +129,11 @@ public class TelaCliente extends javax.swing.JFrame {
         jBtnNovo.setBackground(new java.awt.Color(0, 0, 255));
         jBtnNovo.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnNovo.setForeground(new java.awt.Color(255, 255, 255));
+        jBtnNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Novo.png"))); // NOI18N
         jBtnNovo.setText("Novo");
+        jBtnNovo.setBorder(null);
+        jBtnNovo.setBorderPainted(false);
+        jBtnNovo.setContentAreaFilled(false);
         jBtnNovo.setOpaque(false);
         jBtnNovo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -142,7 +146,12 @@ public class TelaCliente extends javax.swing.JFrame {
         jBtnEditar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnEditar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnEditar.setForeground(new java.awt.Color(255, 255, 255));
+        jBtnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Editar.png"))); // NOI18N
         jBtnEditar.setText("Editar");
+        jBtnEditar.setBorder(null);
+        jBtnEditar.setBorderPainted(false);
+        jBtnEditar.setContentAreaFilled(false);
+        jBtnEditar.setEnabled(false);
         jBtnEditar.setOpaque(false);
         jBtnEditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -155,7 +164,12 @@ public class TelaCliente extends javax.swing.JFrame {
         jBtnCancelar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnCancelar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnCancelar.setForeground(new java.awt.Color(255, 255, 255));
+        jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Cancelar.png"))); // NOI18N
         jBtnCancelar.setText("Cancelar");
+        jBtnCancelar.setBorder(null);
+        jBtnCancelar.setBorderPainted(false);
+        jBtnCancelar.setContentAreaFilled(false);
+        jBtnCancelar.setEnabled(false);
         jBtnCancelar.setOpaque(false);
         jBtnCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -168,7 +182,12 @@ public class TelaCliente extends javax.swing.JFrame {
         jBtnSalvar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnSalvar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnSalvar.setForeground(new java.awt.Color(255, 255, 255));
+        jBtnSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Salvar.png"))); // NOI18N
         jBtnSalvar.setText("Salvar");
+        jBtnSalvar.setBorder(null);
+        jBtnSalvar.setBorderPainted(false);
+        jBtnSalvar.setContentAreaFilled(false);
+        jBtnSalvar.setEnabled(false);
         jBtnSalvar.setOpaque(false);
         jBtnSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -181,7 +200,12 @@ public class TelaCliente extends javax.swing.JFrame {
         jBtnExcluir.setBackground(new java.awt.Color(0, 0, 255));
         jBtnExcluir.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnExcluir.setForeground(new java.awt.Color(255, 255, 255));
+        jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Excluir.png"))); // NOI18N
         jBtnExcluir.setText("Excluir");
+        jBtnExcluir.setBorder(null);
+        jBtnExcluir.setBorderPainted(false);
+        jBtnExcluir.setContentAreaFilled(false);
+        jBtnExcluir.setEnabled(false);
         jBtnExcluir.setOpaque(false);
         jBtnExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -207,7 +231,7 @@ public class TelaCliente extends javax.swing.JFrame {
         jPanelGeral.add(jPanelRegistro);
         jPanelRegistro.setBounds(10, 10, 400, 250);
 
-        jPanelTabela.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Clientes Cadastrados", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12), new java.awt.Color(0, 0, 255))); // NOI18N
+        jPanelTabela.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Clientes Cadastrados", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 0, 255))); // NOI18N
         jPanelTabela.setOpaque(false);
 
         jTClientes.setBackground(new java.awt.Color(204, 204, 204));
@@ -237,7 +261,7 @@ public class TelaCliente extends javax.swing.JFrame {
         );
         jPanelTabelaLayout.setVerticalGroup(
             jPanelTabelaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)
         );
 
         jPanelGeral.add(jPanelTabela);
@@ -246,7 +270,11 @@ public class TelaCliente extends javax.swing.JFrame {
         jBtnPesquisar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnPesquisar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnPesquisar.setForeground(new java.awt.Color(255, 255, 255));
+        jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Pesquisar.png"))); // NOI18N
         jBtnPesquisar.setText("Pesquisar");
+        jBtnPesquisar.setBorder(null);
+        jBtnPesquisar.setBorderPainted(false);
+        jBtnPesquisar.setContentAreaFilled(false);
         jBtnPesquisar.setOpaque(false);
         jBtnPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -254,12 +282,13 @@ public class TelaCliente extends javax.swing.JFrame {
             }
         });
         jPanelGeral.add(jBtnPesquisar);
-        jBtnPesquisar.setBounds(300, 270, 110, 23);
+        jBtnPesquisar.setBounds(300, 270, 120, 23);
 
         jBtnSair.setBackground(new java.awt.Color(0, 0, 255));
         jBtnSair.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnSair.setText("Sair");
+        jBtnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Sair.png"))); // NOI18N
         jBtnSair.setBorderPainted(false);
+        jBtnSair.setContentAreaFilled(false);
         jBtnSair.setOpaque(false);
         jBtnSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -267,7 +296,7 @@ public class TelaCliente extends javax.swing.JFrame {
             }
         });
         jPanelGeral.add(jBtnSair);
-        jBtnSair.setBounds(110, 470, 200, 23);
+        jBtnSair.setBounds(110, 470, 200, 109);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/madeira.jpg"))); // NOI18N
         jPanelGeral.add(jLabel2);

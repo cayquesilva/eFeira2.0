@@ -46,7 +46,7 @@ public class TelaLogin extends javax.swing.JFrame {
         setTitle("eFeira - Autenticação");
         getContentPane().setLayout(null);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Autenticação Necessária", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12), new java.awt.Color(0, 0, 255))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Autenticação Necessária", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 0, 255))); // NOI18N
         jPanel1.setForeground(new java.awt.Color(255, 255, 0));
         jPanel1.setOpaque(false);
         jPanel1.setLayout(null);
@@ -58,7 +58,6 @@ public class TelaLogin extends javax.swing.JFrame {
         jBtnAcessar.setBorder(null);
         jBtnAcessar.setBorderPainted(false);
         jBtnAcessar.setContentAreaFilled(false);
-        jBtnAcessar.setOpaque(false);
         jBtnAcessar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnAcessarActionPerformed(evt);

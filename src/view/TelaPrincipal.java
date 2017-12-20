@@ -71,14 +71,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jInternalFrameBemVindos.setTitle("Bem vindo ao EFeira");
         jInternalFrameBemVindos.setVisible(true);
 
-        jLblTitulo.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 18)); // NOI18N
+        jLblTitulo.setFont(new java.awt.Font("Bodoni MT Black", 0, 18)); // NOI18N
         jLblTitulo.setForeground(new java.awt.Color(0, 0, 255));
         jLblTitulo.setText("Sistema eFeira");
 
         jPanelBemVindo.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
         jPanelBemVindo.setLayout(null);
 
-        jPanelVendas.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Administrador", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12), new java.awt.Color(0, 0, 255))); // NOI18N
+        jPanelVendas.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Administrador", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 0, 255))); // NOI18N
         jPanelVendas.setForeground(new java.awt.Color(255, 255, 255));
         jPanelVendas.setOpaque(false);
 
@@ -106,13 +106,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
             .addGroup(jPanelVendasLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jBtnComprar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         jPanelBemVindo.add(jPanelVendas);
         jPanelVendas.setBounds(630, 0, 130, 150);
 
-        JPanelCadastros.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Administrador", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12), new java.awt.Color(0, 0, 255))); // NOI18N
+        JPanelCadastros.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Administrador", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 0, 255))); // NOI18N
         JPanelCadastros.setForeground(new java.awt.Color(255, 255, 255));
         JPanelCadastros.setOpaque(false);
 
@@ -170,7 +170,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                     .addComponent(jBtnRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jBtnCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jBtnProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         jPanelBemVindo.add(JPanelCadastros);
@@ -187,7 +187,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
-        jButton1.setOpaque(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -198,15 +197,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jInternalFrameBemVindos.getContentPane().setLayout(jInternalFrameBemVindosLayout);
         jInternalFrameBemVindosLayout.setHorizontalGroup(
             jInternalFrameBemVindosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jInternalFrameBemVindosLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLblTitulo)
-                .addContainerGap(625, Short.MAX_VALUE))
             .addComponent(jPanelBemVindo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrameBemVindosLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(652, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(41, 41, 41))
+            .addGroup(jInternalFrameBemVindosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jInternalFrameBemVindosLayout.setVerticalGroup(
             jInternalFrameBemVindosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
