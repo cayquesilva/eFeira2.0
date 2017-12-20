@@ -46,14 +46,18 @@ public class TelaLogin extends javax.swing.JFrame {
         setTitle("eFeira - Autenticação");
         getContentPane().setLayout(null);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Autenticação Necessária", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Autenticação Necessária", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12), new java.awt.Color(0, 0, 255))); // NOI18N
+        jPanel1.setForeground(new java.awt.Color(255, 255, 0));
         jPanel1.setOpaque(false);
         jPanel1.setLayout(null);
 
         jBtnAcessar.setBackground(new java.awt.Color(255, 255, 255));
         jBtnAcessar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnAcessar.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnAcessar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/login teste.png"))); // NOI18N
+        jBtnAcessar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Login.png"))); // NOI18N
+        jBtnAcessar.setBorder(null);
+        jBtnAcessar.setBorderPainted(false);
+        jBtnAcessar.setContentAreaFilled(false);
         jBtnAcessar.setOpaque(false);
         jBtnAcessar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,9 +65,9 @@ public class TelaLogin extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jBtnAcessar);
-        jBtnAcessar.setBounds(10, 250, 80, 20);
+        jBtnAcessar.setBounds(10, 270, 100, 20);
 
-        JtxtUsuario.setForeground(new java.awt.Color(177, 77, 9));
+        JtxtUsuario.setForeground(new java.awt.Color(0, 0, 255));
         JtxtUsuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         JtxtUsuario.setText("Usuario");
         JtxtUsuario.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -72,9 +76,9 @@ public class TelaLogin extends javax.swing.JFrame {
             }
         });
         jPanel1.add(JtxtUsuario);
-        JtxtUsuario.setBounds(80, 80, 140, 30);
+        JtxtUsuario.setBounds(90, 70, 130, 30);
 
-        jPasswordField1.setForeground(new java.awt.Color(177, 77, 9));
+        jPasswordField1.setForeground(new java.awt.Color(0, 0, 255));
         jPasswordField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPasswordField1.setText("usuario");
         jPasswordField1.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -88,31 +92,34 @@ public class TelaLogin extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jPasswordField1);
-        jPasswordField1.setBounds(80, 120, 140, 30);
+        jPasswordField1.setBounds(90, 110, 130, 30);
 
-        jLblCarro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/carro prod.png"))); // NOI18N
+        jLblCarro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/carro teste.png"))); // NOI18N
         jPanel1.add(jLblCarro);
-        jLblCarro.setBounds(-10, 0, 280, 250);
+        jLblCarro.setBounds(20, 30, 250, 220);
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Cancelar.png"))); // NOI18N
+        jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(190, 250, 80, 20);
+        jButton1.setBounds(200, 270, 100, 20);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(10, 10, 280, 280);
+        jPanel1.setBounds(10, 10, 320, 300);
 
-        JlblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/plano-de-fundo-azul-21.jpg"))); // NOI18N
+        JlblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/madeira.jpg"))); // NOI18N
         getContentPane().add(JlblFundo);
-        JlblFundo.setBounds(0, 0, 310, 300);
+        JlblFundo.setBounds(-20, -50, 380, 380);
 
-        setSize(new java.awt.Dimension(316, 339));
+        setSize(new java.awt.Dimension(352, 356));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

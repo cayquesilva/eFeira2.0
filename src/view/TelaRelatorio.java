@@ -33,6 +33,7 @@ public class TelaRelatorio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
         jPanelFundo = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -43,85 +44,82 @@ public class TelaRelatorio extends javax.swing.JFrame {
         jLblLucroReal = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLblLucroPorcentagem = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jBtnAtualizar = new javax.swing.JButton();
         jBtnSair = new javax.swing.JButton();
         jLblFundo = new javax.swing.JLabel();
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/crescimento.png"))); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setSize(new java.awt.Dimension(200, 300));
 
         jPanelFundo.setLayout(null);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Rendimento Atual", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel1.setOpaque(false);
         jPanel1.setLayout(null);
 
         jLabel2.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Total gasto na compra de produtos ");
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(0, 40, 290, 13);
+        jLabel2.setBounds(10, 100, 270, 20);
 
         jLblTotalGasto.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
-        jLblTotalGasto.setForeground(new java.awt.Color(255, 255, 255));
+        jLblTotalGasto.setForeground(new java.awt.Color(0, 0, 255));
         jLblTotalGasto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLblTotalGasto.setText("0.00");
         jPanel1.add(jLblTotalGasto);
-        jLblTotalGasto.setBounds(0, 57, 308, 40);
+        jLblTotalGasto.setBounds(10, 120, 270, 13);
 
         jLabel3.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(0, 0, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Total recebido na venda de produtos ");
+        jLabel3.setText("Total de venda de produtos ");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(0, 110, 290, 13);
+        jLabel3.setBounds(10, 150, 270, 13);
 
         jLblTotalVendido.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
-        jLblTotalVendido.setForeground(new java.awt.Color(255, 255, 255));
+        jLblTotalVendido.setForeground(new java.awt.Color(0, 0, 255));
         jLblTotalVendido.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLblTotalVendido.setText("0.00");
         jPanel1.add(jLblTotalVendido);
-        jLblTotalVendido.setBounds(0, 137, 308, 30);
+        jLblTotalVendido.setBounds(10, 170, 270, 13);
 
         jLabel4.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(0, 0, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Lucro obtido em reais ");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(0, 180, 290, 13);
+        jLabel4.setBounds(10, 200, 270, 13);
 
         jLblLucroReal.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
-        jLblLucroReal.setForeground(new java.awt.Color(255, 255, 255));
+        jLblLucroReal.setForeground(new java.awt.Color(0, 0, 255));
         jLblLucroReal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLblLucroReal.setText("0.00");
         jPanel1.add(jLblLucroReal);
-        jLblLucroReal.setBounds(0, 210, 308, 13);
+        jLblLucroReal.setBounds(10, 220, 270, 13);
 
         jLabel5.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setForeground(new java.awt.Color(0, 0, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Margem percentual de lucro ");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(0, 250, 290, 13);
+        jLabel5.setBounds(10, 250, 270, 13);
 
         jLblLucroPorcentagem.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
-        jLblLucroPorcentagem.setForeground(new java.awt.Color(255, 255, 255));
+        jLblLucroPorcentagem.setForeground(new java.awt.Color(0, 0, 255));
         jLblLucroPorcentagem.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLblLucroPorcentagem.setText("0");
         jPanel1.add(jLblLucroPorcentagem);
-        jLblLucroPorcentagem.setBounds(0, 280, 308, 13);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/crescimento.png"))); // NOI18N
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(10, 100, 300, 210);
+        jLblLucroPorcentagem.setBounds(10, 270, 270, 13);
 
         jPanelFundo.add(jPanel1);
-        jPanel1.setBounds(20, 10, 290, 310);
+        jPanel1.setBounds(20, 20, 290, 300);
 
-        jBtnAtualizar.setBackground(new java.awt.Color(153, 153, 153));
+        jBtnAtualizar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnAtualizar.setForeground(new java.awt.Color(255, 255, 255));
         jBtnAtualizar.setText("Atualizar Dados");
         jBtnAtualizar.setBorderPainted(false);
@@ -134,7 +132,7 @@ public class TelaRelatorio extends javax.swing.JFrame {
         jPanelFundo.add(jBtnAtualizar);
         jBtnAtualizar.setBounds(30, 330, 120, 23);
 
-        jBtnSair.setBackground(new java.awt.Color(153, 153, 153));
+        jBtnSair.setBackground(new java.awt.Color(0, 0, 255));
         jBtnSair.setForeground(new java.awt.Color(255, 255, 255));
         jBtnSair.setText("Sair");
         jBtnSair.setBorderPainted(false);
@@ -147,9 +145,9 @@ public class TelaRelatorio extends javax.swing.JFrame {
         jPanelFundo.add(jBtnSair);
         jBtnSair.setBounds(191, 330, 120, 23);
 
-        jLblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/plano-de-fundo-azul-21.jpg"))); // NOI18N
+        jLblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/RendimentoAtual.png"))); // NOI18N
         jPanelFundo.add(jLblFundo);
-        jLblFundo.setBounds(0, 0, 330, 370);
+        jLblFundo.setBounds(20, 20, 290, 300);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

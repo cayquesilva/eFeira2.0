@@ -66,7 +66,7 @@ public class TelaCliente extends javax.swing.JFrame {
 
         jPanelGeral.setLayout(null);
 
-        jPanelRegistro.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Clientes Cadastrados", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanelRegistro.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Clientes Cadastrados", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12), new java.awt.Color(0, 0, 255))); // NOI18N
         jPanelRegistro.setOpaque(false);
 
         jPanel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -126,7 +126,7 @@ public class TelaCliente extends javax.swing.JFrame {
         jPanel3.add(jLblImg);
         jLblImg.setBounds(120, -13, 260, 280);
 
-        jBtnNovo.setBackground(new java.awt.Color(153, 153, 153));
+        jBtnNovo.setBackground(new java.awt.Color(0, 0, 255));
         jBtnNovo.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnNovo.setForeground(new java.awt.Color(255, 255, 255));
         jBtnNovo.setText("Novo");
@@ -139,7 +139,7 @@ public class TelaCliente extends javax.swing.JFrame {
         jPanel3.add(jBtnNovo);
         jBtnNovo.setBounds(20, 40, 110, 23);
 
-        jBtnEditar.setBackground(new java.awt.Color(153, 153, 153));
+        jBtnEditar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnEditar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnEditar.setForeground(new java.awt.Color(255, 255, 255));
         jBtnEditar.setText("Editar");
@@ -152,7 +152,7 @@ public class TelaCliente extends javax.swing.JFrame {
         jPanel3.add(jBtnEditar);
         jBtnEditar.setBounds(20, 70, 110, 23);
 
-        jBtnCancelar.setBackground(new java.awt.Color(153, 153, 153));
+        jBtnCancelar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnCancelar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnCancelar.setForeground(new java.awt.Color(255, 255, 255));
         jBtnCancelar.setText("Cancelar");
@@ -165,7 +165,7 @@ public class TelaCliente extends javax.swing.JFrame {
         jPanel3.add(jBtnCancelar);
         jBtnCancelar.setBounds(20, 100, 110, 23);
 
-        jBtnSalvar.setBackground(new java.awt.Color(153, 153, 153));
+        jBtnSalvar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnSalvar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnSalvar.setForeground(new java.awt.Color(255, 255, 255));
         jBtnSalvar.setText("Salvar");
@@ -178,7 +178,7 @@ public class TelaCliente extends javax.swing.JFrame {
         jPanel3.add(jBtnSalvar);
         jBtnSalvar.setBounds(20, 130, 110, 23);
 
-        jBtnExcluir.setBackground(new java.awt.Color(153, 153, 153));
+        jBtnExcluir.setBackground(new java.awt.Color(0, 0, 255));
         jBtnExcluir.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnExcluir.setForeground(new java.awt.Color(255, 255, 255));
         jBtnExcluir.setText("Excluir");
@@ -207,9 +207,10 @@ public class TelaCliente extends javax.swing.JFrame {
         jPanelGeral.add(jPanelRegistro);
         jPanelRegistro.setBounds(10, 10, 400, 250);
 
-        jPanelTabela.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Clientes Cadastrados", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanelTabela.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Clientes Cadastrados", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12), new java.awt.Color(0, 0, 255))); // NOI18N
         jPanelTabela.setOpaque(false);
 
+        jTClientes.setBackground(new java.awt.Color(204, 204, 204));
         jTClientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
@@ -242,7 +243,7 @@ public class TelaCliente extends javax.swing.JFrame {
         jPanelGeral.add(jPanelTabela);
         jPanelTabela.setBounds(10, 300, 400, 160);
 
-        jBtnPesquisar.setBackground(new java.awt.Color(153, 153, 153));
+        jBtnPesquisar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnPesquisar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnPesquisar.setForeground(new java.awt.Color(255, 255, 255));
         jBtnPesquisar.setText("Pesquisar");
@@ -255,7 +256,7 @@ public class TelaCliente extends javax.swing.JFrame {
         jPanelGeral.add(jBtnPesquisar);
         jBtnPesquisar.setBounds(300, 270, 110, 23);
 
-        jBtnSair.setBackground(new java.awt.Color(153, 153, 153));
+        jBtnSair.setBackground(new java.awt.Color(0, 0, 255));
         jBtnSair.setForeground(new java.awt.Color(255, 255, 255));
         jBtnSair.setText("Sair");
         jBtnSair.setBorderPainted(false);
@@ -268,7 +269,7 @@ public class TelaCliente extends javax.swing.JFrame {
         jPanelGeral.add(jBtnSair);
         jBtnSair.setBounds(110, 470, 200, 23);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/plano-de-fundo-azul-21.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/madeira.jpg"))); // NOI18N
         jPanelGeral.add(jLabel2);
         jLabel2.setBounds(0, 0, 420, 500);
 
