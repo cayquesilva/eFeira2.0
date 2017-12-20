@@ -147,7 +147,6 @@ public final class TelaComprarProdutos extends javax.swing.JFrame {
         jCbCliente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jCbCliente.setToolTipText("Selecione um Cliente");
         jCbCliente.setOpaque(false);
-       
         jPanel1.add(jCbCliente);
         jCbCliente.setBounds(410, 10, 250, 19);
 
@@ -224,7 +223,7 @@ public final class TelaComprarProdutos extends javax.swing.JFrame {
         jPanel1.add(jPanel2);
         jPanel2.setBounds(450, 50, 423, 530);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/fundo.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/plano-de-fundo-azul-21.jpg"))); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 890, 640);
 

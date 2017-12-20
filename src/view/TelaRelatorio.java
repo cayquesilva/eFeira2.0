@@ -147,7 +147,7 @@ public class TelaRelatorio extends javax.swing.JFrame {
         jPanelFundo.add(jBtnSair);
         jBtnSair.setBounds(191, 330, 120, 23);
 
-        jLblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/fundo.jpg"))); // NOI18N
+        jLblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/plano-de-fundo-azul-21.jpg"))); // NOI18N
         jPanelFundo.add(jLblFundo);
         jLblFundo.setBounds(0, 0, 330, 370);
 
