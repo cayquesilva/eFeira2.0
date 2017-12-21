@@ -38,7 +38,6 @@ public class TelaRelatorio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         jPanelFundo = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -53,8 +52,6 @@ public class TelaRelatorio extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jBtnSair = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/crescimento.png"))); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setSize(new java.awt.Dimension(200, 300));
@@ -210,7 +207,6 @@ public class TelaRelatorio extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBtnSair;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
