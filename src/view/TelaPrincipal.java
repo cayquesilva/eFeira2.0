@@ -5,7 +5,9 @@
  */
 package view;
 
+import java.awt.Container;
 import javax.swing.JOptionPane;
+import javax.swing.plaf.basic.BasicInternalFrameUI;
 import modeloConection.ConexaoBD;
 import modeloDao.DaoCliente;
 
@@ -25,6 +27,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     public TelaPrincipal() {
         initComponents();
         conecta.conexao();
+        removerTittle();
     }
 
     /**
@@ -71,7 +74,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         jInternalFrameBemVindos.setBackground(new java.awt.Color(153, 153, 153));
-        jInternalFrameBemVindos.setTitle("Bem vindo ao EFeira");
+        jInternalFrameBemVindos.setForeground(new java.awt.Color(255, 255, 255));
+        jInternalFrameBemVindos.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jInternalFrameBemVindos.setFrameIcon(null);
         jInternalFrameBemVindos.setVisible(true);
 
         jLblTitulo.setFont(new java.awt.Font("Bodoni MT Black", 0, 18)); // NOI18N
@@ -91,7 +96,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jBtnComprar.setToolTipText("Ver Produtos à Venda");
         jBtnComprar.setBorderPainted(false);
         jBtnComprar.setContentAreaFilled(false);
-        jBtnComprar.setOpaque(false);
         jBtnComprar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/comprarprodutos selecionado.png"))); // NOI18N
         jBtnComprar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/comprarprodutos mouse.png"))); // NOI18N
         jBtnComprar.addActionListener(new java.awt.event.ActionListener() {
@@ -130,7 +134,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jBtnProduto.setBorderPainted(false);
         jBtnProduto.setContentAreaFilled(false);
         jBtnProduto.setName(""); // NOI18N
-        jBtnProduto.setOpaque(false);
         jBtnProduto.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/estoque.png"))); // NOI18N
         jBtnProduto.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/estoque selecionado.png"))); // NOI18N
         jBtnProduto.addActionListener(new java.awt.event.ActionListener() {
@@ -144,7 +147,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jBtnCliente.setBorder(null);
         jBtnCliente.setBorderPainted(false);
         jBtnCliente.setContentAreaFilled(false);
-        jBtnCliente.setOpaque(false);
         jBtnCliente.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/clientes selecionado.png"))); // NOI18N
         jBtnCliente.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/clientes mouse.png"))); // NOI18N
         jBtnCliente.addActionListener(new java.awt.event.ActionListener() {
@@ -157,7 +159,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jBtnRelatorios.setToolTipText("Ver Rendimento Atual");
         jBtnRelatorios.setBorderPainted(false);
         jBtnRelatorios.setContentAreaFilled(false);
-        jBtnRelatorios.setOpaque(false);
         jBtnRelatorios.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/relatorios selecionado.png"))); // NOI18N
         jBtnRelatorios.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/relatorios mouse.png"))); // NOI18N
         jBtnRelatorios.addActionListener(new java.awt.event.ActionListener() {
@@ -391,6 +392,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jInternalFrameBemVindos.setVisible(true);
     }//GEN-LAST:event_jMenuItemBemVindoActionPerformed
 
+    public void removerTittle(){
+        jInternalFrameBemVindos.setFrameIcon(null);
+        BasicInternalFrameUI ui = (BasicInternalFrameUI) jInternalFrameBemVindos.getUI();
+        Container north = (Container) ui.getNorthPane();
+        north.remove(0);
+        north.validate();
+        north.repaint();
+    }
     /**
      * @param args the command line arguments
      */
