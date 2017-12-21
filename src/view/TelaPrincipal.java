@@ -47,7 +47,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jBtnRelatorios = new javax.swing.JButton();
         jLblPainelFundo = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jLblFundo = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar = new javax.swing.JMenuBar();
         jMenuOrganizarEstoque = new javax.swing.JMenu();
         jMenuItemEstoque = new javax.swing.JMenuItem();
@@ -64,28 +64,36 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("eFeira - Cayque Silva");
+        setBackground(new java.awt.Color(51, 255, 204));
+        setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
         getContentPane().setLayout(null);
 
-        jInternalFrameBemVindos.setBackground(new java.awt.Color(255, 255, 255));
+        jInternalFrameBemVindos.setBackground(new java.awt.Color(153, 153, 153));
         jInternalFrameBemVindos.setTitle("Bem vindo ao EFeira");
         jInternalFrameBemVindos.setVisible(true);
 
         jLblTitulo.setFont(new java.awt.Font("Bodoni MT Black", 0, 18)); // NOI18N
-        jLblTitulo.setForeground(new java.awt.Color(0, 0, 255));
+        jLblTitulo.setForeground(new java.awt.Color(255, 255, 255));
         jLblTitulo.setText("Sistema eFeira");
 
+        jPanelBemVindo.setBackground(new java.awt.Color(21, 103, 164));
         jPanelBemVindo.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        jPanelBemVindo.setForeground(new java.awt.Color(51, 153, 255));
         jPanelBemVindo.setLayout(null);
 
-        jPanelVendas.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Administrador", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 0, 255))); // NOI18N
+        jPanelVendas.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Ver Produtos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jPanelVendas.setForeground(new java.awt.Color(255, 255, 255));
         jPanelVendas.setOpaque(false);
 
-        jBtnComprar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/comprar teste.png"))); // NOI18N
+        jBtnComprar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/comprarprodutos.png"))); // NOI18N
         jBtnComprar.setToolTipText("Ver Produtos à Venda");
         jBtnComprar.setBorderPainted(false);
+        jBtnComprar.setContentAreaFilled(false);
         jBtnComprar.setOpaque(false);
+        jBtnComprar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/comprarprodutos selecionado.png"))); // NOI18N
+        jBtnComprar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/comprarprodutos mouse.png"))); // NOI18N
         jBtnComprar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnComprarActionPerformed(evt);
@@ -96,53 +104,62 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jPanelVendas.setLayout(jPanelVendasLayout);
         jPanelVendasLayout.setHorizontalGroup(
             jPanelVendasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelVendasLayout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelVendasLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jBtnComprar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanelVendasLayout.setVerticalGroup(
             jPanelVendasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelVendasLayout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelVendasLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jBtnComprar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         jPanelBemVindo.add(jPanelVendas);
-        jPanelVendas.setBounds(630, 0, 130, 150);
+        jPanelVendas.setBounds(40, 160, 130, 140);
 
-        JPanelCadastros.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Administrador", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 0, 255))); // NOI18N
+        JPanelCadastros.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Administrador", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         JPanelCadastros.setForeground(new java.awt.Color(255, 255, 255));
         JPanelCadastros.setOpaque(false);
 
-        jBtnProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/estoque teste.png"))); // NOI18N
+        jBtnProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/estoque mouse.png"))); // NOI18N
         jBtnProduto.setToolTipText("Organizar Estoque");
         jBtnProduto.setBorder(null);
         jBtnProduto.setBorderPainted(false);
+        jBtnProduto.setContentAreaFilled(false);
         jBtnProduto.setName(""); // NOI18N
         jBtnProduto.setOpaque(false);
+        jBtnProduto.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/estoque.png"))); // NOI18N
+        jBtnProduto.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/estoque selecionado.png"))); // NOI18N
         jBtnProduto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnProdutoActionPerformed(evt);
             }
         });
 
-        jBtnCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/clientes teste.png"))); // NOI18N
+        jBtnCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/clientes.png"))); // NOI18N
         jBtnCliente.setToolTipText("Gerenciar Clientes");
         jBtnCliente.setBorder(null);
         jBtnCliente.setBorderPainted(false);
+        jBtnCliente.setContentAreaFilled(false);
         jBtnCliente.setOpaque(false);
+        jBtnCliente.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/clientes selecionado.png"))); // NOI18N
+        jBtnCliente.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/clientes mouse.png"))); // NOI18N
         jBtnCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnClienteActionPerformed(evt);
             }
         });
 
-        jBtnRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/relatorios teste.png"))); // NOI18N
+        jBtnRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/relatorios.png"))); // NOI18N
         jBtnRelatorios.setToolTipText("Ver Rendimento Atual");
         jBtnRelatorios.setBorderPainted(false);
+        jBtnRelatorios.setContentAreaFilled(false);
         jBtnRelatorios.setOpaque(false);
+        jBtnRelatorios.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/relatorios selecionado.png"))); // NOI18N
+        jBtnRelatorios.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/relatorios mouse.png"))); // NOI18N
         jBtnRelatorios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnRelatoriosActionPerformed(evt);
@@ -155,12 +172,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
             JPanelCadastrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JPanelCadastrosLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jBtnProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jBtnProduto)
                 .addGap(18, 18, 18)
-                .addComponent(jBtnCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jBtnCliente)
                 .addGap(18, 18, 18)
                 .addComponent(jBtnRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         JPanelCadastrosLayout.setVerticalGroup(
             JPanelCadastrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -168,18 +185,18 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(JPanelCadastrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jBtnRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBtnCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBtnProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(16, Short.MAX_VALUE))
+                    .addComponent(jBtnCliente)
+                    .addComponent(jBtnProduto))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanelBemVindo.add(JPanelCadastros);
-        JPanelCadastros.setBounds(40, 0, 370, 150);
+        JPanelCadastros.setBounds(40, 10, 370, 140);
 
-        jLblPainelFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/madeira.jpg"))); // NOI18N
-        jLblPainelFundo.setText("jLabel1");
+        jLblPainelFundo.setBackground(new java.awt.Color(204, 204, 204));
+        jLblPainelFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/efeira principal.png"))); // NOI18N
         jPanelBemVindo.add(jLblPainelFundo);
-        jLblPainelFundo.setBounds(-50, 0, 850, 170);
+        jLblPainelFundo.setBounds(500, 10, 270, 270);
 
         jButton1.setBackground(new java.awt.Color(0, 0, 255));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
@@ -187,6 +204,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
+        jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/cancelar selecionado.png"))); // NOI18N
+        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/cancelar mouse.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -198,14 +217,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jInternalFrameBemVindosLayout.setHorizontalGroup(
             jInternalFrameBemVindosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanelBemVindo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrameBemVindosLayout.createSequentialGroup()
-                .addContainerGap(652, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(41, 41, 41))
             .addGroup(jInternalFrameBemVindosLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(47, 47, 47)
+                .addComponent(jLblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(531, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrameBemVindosLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(31, 31, 31))
         );
         jInternalFrameBemVindosLayout.setVerticalGroup(
             jInternalFrameBemVindosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -213,18 +232,17 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLblTitulo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanelBemVindo, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanelBemVindo, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1))
         );
 
         getContentPane().add(jInternalFrameBemVindos);
-        jInternalFrameBemVindos.setBounds(0, 40, 810, 270);
+        jInternalFrameBemVindos.setBounds(0, 20, 800, 420);
 
-        jLblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/madeira.jpg"))); // NOI18N
-        getContentPane().add(jLblFundo);
-        jLblFundo.setBounds(0, 0, 810, 370);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/fundo principal2.jpg"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, -40, 800, 540);
 
         jMenuOrganizarEstoque.setText("Organizar Estoque");
 
@@ -294,7 +312,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         setJMenuBar(jMenuBar);
 
-        setSize(new java.awt.Dimension(816, 420));
+        setSize(new java.awt.Dimension(807, 512));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -416,7 +434,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton jBtnRelatorios;
     private javax.swing.JButton jButton1;
     private javax.swing.JInternalFrame jInternalFrameBemVindos;
-    private javax.swing.JLabel jLblFundo;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLblPainelFundo;
     private javax.swing.JLabel jLblTitulo;
     private javax.swing.JMenuBar jMenuBar;

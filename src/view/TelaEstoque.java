@@ -43,6 +43,7 @@ public class TelaEstoque extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanelGeral = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         jPanelRegistro = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jTxtVenda = new javax.swing.JTextField();
@@ -62,21 +63,25 @@ public class TelaEstoque extends javax.swing.JFrame {
         jTProdutos = new javax.swing.JTable();
         jBtnPesquisar = new javax.swing.JButton();
         jBtnSair = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setSize(new java.awt.Dimension(300, 300));
 
         jPanelGeral.setLayout(null);
 
-        jPanelRegistro.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Cadastrar Produtos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 0, 255))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon 64.png"))); // NOI18N
+        jPanelGeral.add(jLabel2);
+        jLabel2.setBounds(354, 0, 60, 60);
+
+        jPanelRegistro.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Cadastrar Produtos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jPanelRegistro.setOpaque(false);
 
         jPanel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jPanel3.setOpaque(false);
         jPanel3.setLayout(null);
 
-        jTxtVenda.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jTxtVenda.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         jTxtVenda.setForeground(new java.awt.Color(0, 0, 255));
         jTxtVenda.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTxtVenda.setText("Venda");
@@ -89,7 +94,7 @@ public class TelaEstoque extends javax.swing.JFrame {
         jPanel3.add(jTxtVenda);
         jTxtVenda.setBounds(280, 110, 70, 19);
 
-        jTxtNome.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jTxtNome.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         jTxtNome.setForeground(new java.awt.Color(0, 0, 255));
         jTxtNome.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTxtNome.setText("Nome");
@@ -101,7 +106,7 @@ public class TelaEstoque extends javax.swing.JFrame {
         jPanel3.add(jTxtNome);
         jTxtNome.setBounds(200, 50, 160, 19);
 
-        jTxtCompra.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jTxtCompra.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         jTxtCompra.setForeground(new java.awt.Color(0, 0, 255));
         jTxtCompra.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTxtCompra.setText("Compra");
@@ -114,15 +119,15 @@ public class TelaEstoque extends javax.swing.JFrame {
         jPanel3.add(jTxtCompra);
         jTxtCompra.setBounds(210, 110, 70, 19);
 
-        jTxtID.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 11)); // NOI18N
+        jTxtID.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jTxtID.setForeground(new java.awt.Color(0, 0, 255));
         jTxtID.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTxtID.setText("ID");
         jTxtID.setEnabled(false);
         jPanel3.add(jTxtID);
-        jTxtID.setBounds(340, 0, 40, 20);
+        jTxtID.setBounds(200, 20, 40, 20);
 
-        jTxtCodigo.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jTxtCodigo.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         jTxtCodigo.setForeground(new java.awt.Color(0, 0, 255));
         jTxtCodigo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTxtCodigo.setText("Cod.");
@@ -135,7 +140,7 @@ public class TelaEstoque extends javax.swing.JFrame {
         jPanel3.add(jTxtCodigo);
         jTxtCodigo.setBounds(280, 80, 80, 19);
 
-        jTxtQuantidade.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jTxtQuantidade.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         jTxtQuantidade.setForeground(new java.awt.Color(0, 0, 255));
         jTxtQuantidade.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTxtQuantidade.setText("Quant.");
@@ -157,32 +162,34 @@ public class TelaEstoque extends javax.swing.JFrame {
         jBtnNovo.setBackground(new java.awt.Color(0, 0, 255));
         jBtnNovo.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnNovo.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Novo.png"))); // NOI18N
+        jBtnNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/novo mouse.png"))); // NOI18N
         jBtnNovo.setContentAreaFilled(false);
-        jBtnNovo.setOpaque(false);
+        jBtnNovo.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/novo selecionado.png"))); // NOI18N
+        jBtnNovo.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/novo mouse.png"))); // NOI18N
         jBtnNovo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnNovoActionPerformed(evt);
             }
         });
         jPanel3.add(jBtnNovo);
-        jBtnNovo.setBounds(20, 40, 110, 23);
+        jBtnNovo.setBounds(40, 20, 80, 40);
 
         jBtnEditar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnEditar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnEditar.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Editar.png"))); // NOI18N
+        jBtnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/editar.png"))); // NOI18N
         jBtnEditar.setBorderPainted(false);
         jBtnEditar.setContentAreaFilled(false);
         jBtnEditar.setEnabled(false);
-        jBtnEditar.setOpaque(false);
+        jBtnEditar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/editar selecionado.png"))); // NOI18N
+        jBtnEditar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/editar mouse.png"))); // NOI18N
         jBtnEditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnEditarActionPerformed(evt);
             }
         });
         jPanel3.add(jBtnEditar);
-        jBtnEditar.setBounds(20, 70, 110, 23);
+        jBtnEditar.setBounds(40, 60, 80, 40);
 
         jBtnCancelar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnCancelar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
@@ -191,46 +198,49 @@ public class TelaEstoque extends javax.swing.JFrame {
         jBtnCancelar.setBorderPainted(false);
         jBtnCancelar.setContentAreaFilled(false);
         jBtnCancelar.setEnabled(false);
-        jBtnCancelar.setOpaque(false);
+        jBtnCancelar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/cancelar selecionado.png"))); // NOI18N
+        jBtnCancelar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/cancelar mouse.png"))); // NOI18N
         jBtnCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnCancelarActionPerformed(evt);
             }
         });
         jPanel3.add(jBtnCancelar);
-        jBtnCancelar.setBounds(20, 100, 110, 23);
+        jBtnCancelar.setBounds(40, 100, 80, 40);
 
         jBtnCadastrar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnCadastrar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnCadastrar.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Salvar.png"))); // NOI18N
+        jBtnCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/salvar.png"))); // NOI18N
         jBtnCadastrar.setBorderPainted(false);
         jBtnCadastrar.setContentAreaFilled(false);
         jBtnCadastrar.setEnabled(false);
-        jBtnCadastrar.setOpaque(false);
+        jBtnCadastrar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/salvar selecionado.png"))); // NOI18N
+        jBtnCadastrar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/salvar mouse.png"))); // NOI18N
         jBtnCadastrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnCadastrarActionPerformed(evt);
             }
         });
         jPanel3.add(jBtnCadastrar);
-        jBtnCadastrar.setBounds(20, 130, 110, 23);
+        jBtnCadastrar.setBounds(40, 140, 80, 40);
 
         jBtnExcluir.setBackground(new java.awt.Color(0, 0, 255));
         jBtnExcluir.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnExcluir.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Excluir.png"))); // NOI18N
+        jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/excluir.png"))); // NOI18N
         jBtnExcluir.setBorderPainted(false);
         jBtnExcluir.setContentAreaFilled(false);
         jBtnExcluir.setEnabled(false);
-        jBtnExcluir.setOpaque(false);
+        jBtnExcluir.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/excluir selecionado.png"))); // NOI18N
+        jBtnExcluir.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/excluir mouse.png"))); // NOI18N
         jBtnExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnExcluirActionPerformed(evt);
             }
         });
         jPanel3.add(jBtnExcluir);
-        jBtnExcluir.setBounds(20, 160, 110, 23);
+        jBtnExcluir.setBounds(40, 180, 80, 43);
 
         javax.swing.GroupLayout jPanelRegistroLayout = new javax.swing.GroupLayout(jPanelRegistro);
         jPanelRegistro.setLayout(jPanelRegistroLayout);
@@ -242,13 +252,13 @@ public class TelaEstoque extends javax.swing.JFrame {
         );
         jPanelRegistroLayout.setVerticalGroup(
             jPanelRegistroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 227, Short.MAX_VALUE)
         );
 
         jPanelGeral.add(jPanelRegistro);
         jPanelRegistro.setBounds(10, 10, 400, 250);
 
-        jPanelTabela.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Cadastrar Produtos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 0, 255))); // NOI18N
+        jPanelTabela.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Produtos Cadastrados", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jPanelTabela.setOpaque(false);
 
         jTProdutos.setBackground(new java.awt.Color(204, 204, 204));
@@ -278,45 +288,46 @@ public class TelaEstoque extends javax.swing.JFrame {
         );
         jPanelTabelaLayout.setVerticalGroup(
             jPanelTabelaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
         );
 
         jPanelGeral.add(jPanelTabela);
-        jPanelTabela.setBounds(10, 300, 400, 160);
+        jPanelTabela.setBounds(10, 290, 400, 150);
 
         jBtnPesquisar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnPesquisar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnPesquisar.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Pesquisar.png"))); // NOI18N
+        jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/pesquisar.png"))); // NOI18N
         jBtnPesquisar.setBorderPainted(false);
         jBtnPesquisar.setContentAreaFilled(false);
-        jBtnPesquisar.setOpaque(false);
+        jBtnPesquisar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/pesquisar selecionado.png"))); // NOI18N
+        jBtnPesquisar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/pesquisar mouse.png"))); // NOI18N
         jBtnPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnPesquisarActionPerformed(evt);
             }
         });
         jPanelGeral.add(jBtnPesquisar);
-        jBtnPesquisar.setBounds(300, 270, 110, 23);
+        jBtnPesquisar.setBounds(310, 255, 80, 45);
 
         jBtnSair.setBackground(new java.awt.Color(0, 0, 255));
         jBtnSair.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Sair.png"))); // NOI18N
-        jBtnSair.setText("Sair");
+        jBtnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/sair.png"))); // NOI18N
         jBtnSair.setBorderPainted(false);
         jBtnSair.setContentAreaFilled(false);
-        jBtnSair.setOpaque(false);
+        jBtnSair.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Sair selecionado.png"))); // NOI18N
+        jBtnSair.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/sair mouse.png"))); // NOI18N
         jBtnSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnSairActionPerformed(evt);
             }
         });
         jPanelGeral.add(jBtnSair);
-        jBtnSair.setBounds(150, 470, 120, 25);
+        jBtnSair.setBounds(170, 450, 80, 30);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/madeira.jpg"))); // NOI18N
-        jPanelGeral.add(jLabel2);
-        jLabel2.setBounds(0, 0, 420, 520);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/fundo principal.jpg"))); // NOI18N
+        jPanelGeral.add(jLabel1);
+        jLabel1.setBounds(0, 0, 420, 490);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -326,10 +337,10 @@ public class TelaEstoque extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelGeral, javax.swing.GroupLayout.DEFAULT_SIZE, 503, Short.MAX_VALUE)
+            .addComponent(jPanelGeral, javax.swing.GroupLayout.DEFAULT_SIZE, 485, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(436, 542));
+        setSize(new java.awt.Dimension(436, 524));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -340,7 +351,7 @@ public class TelaEstoque extends javax.swing.JFrame {
         }else if(jTxtCodigo.getText().isEmpty() || jTxtCodigo.getText().equals("Cod.")){
             JOptionPane.showMessageDialog(null, "Preencha o 'Código' para continuar");
             jTxtCodigo.requestFocus();
-        }else if(jTxtQuantidade.getText().isEmpty() || jTxtQuantidade.getText().equals("Qntd.")){
+        }else if(jTxtQuantidade.getText().isEmpty() || jTxtQuantidade.getText().equals("Quant.")){
             JOptionPane.showMessageDialog(null, "Preencha a 'Quantidade' para continuar");
             jTxtQuantidade.requestFocus();
         }else if(jTxtCompra.getText().isEmpty() || jTxtCompra.getText().equals("Compra")){
@@ -403,11 +414,12 @@ public class TelaEstoque extends javax.swing.JFrame {
         jTxtCompra.setEnabled(true);
         jTxtNome.setEnabled(true);
         jTxtQuantidade.setEnabled(true); 
+        jBtnPesquisar.setEnabled(false);
         jTxtCodigo.setText("Cod.");
         jTxtVenda.setText("Venda");
         jTxtCompra.setText("Compra");
         jTxtNome.setText("Nome");
-        jTxtQuantidade.setText("Qntd.");
+        jTxtQuantidade.setText("Quant.");
         jTxtID.setText("ID");
     }//GEN-LAST:event_jBtnNovoActionPerformed
 
@@ -426,13 +438,13 @@ public class TelaEstoque extends javax.swing.JFrame {
         }
         ModeloTabela modelo = new ModeloTabela(dados, colunas);
         jTProdutos.setModel(modelo);
-        jTProdutos.getColumnModel().getColumn(0).setPreferredWidth(180);
+        jTProdutos.getColumnModel().getColumn(0).setPreferredWidth(130);
         jTProdutos.getColumnModel().getColumn(0).setResizable(false);
-        jTProdutos.getColumnModel().getColumn(1).setPreferredWidth(92);
+        jTProdutos.getColumnModel().getColumn(1).setPreferredWidth(90);
         jTProdutos.getColumnModel().getColumn(1).setResizable(false);
-        jTProdutos.getColumnModel().getColumn(2).setPreferredWidth(92);
+        jTProdutos.getColumnModel().getColumn(2).setPreferredWidth(90);
         jTProdutos.getColumnModel().getColumn(2).setResizable(false);
-        jTProdutos.getColumnModel().getColumn(3).setPreferredWidth(92);
+        jTProdutos.getColumnModel().getColumn(3).setPreferredWidth(71);
         jTProdutos.getColumnModel().getColumn(3).setResizable(false);
         jTProdutos.getTableHeader().setReorderingAllowed(false);
         jTProdutos.setAutoResizeMode(jTProdutos.AUTO_RESIZE_OFF);
@@ -445,7 +457,7 @@ public class TelaEstoque extends javax.swing.JFrame {
         jTxtVenda.setText("Venda");
         jTxtCompra.setText("Compra");
         jTxtNome.setText("Nome");
-        jTxtQuantidade.setText("Qntd.");
+        jTxtQuantidade.setText("Quant.");
         jTxtID.setText("ID");
         jBtnCadastrar.setEnabled(false);
         jBtnCancelar.setEnabled(false);
@@ -455,6 +467,9 @@ public class TelaEstoque extends javax.swing.JFrame {
         jTxtQuantidade.setEnabled(false);
         jBtnEditar.setEnabled(false);
         jBtnExcluir.setEnabled(false);
+        jBtnPesquisar.setEnabled(true);
+        jTxtNome.setEnabled(true);
+        jBtnNovo.setEnabled(true);
     }//GEN-LAST:event_jBtnCancelarActionPerformed
 
     private void jBtnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnEditarActionPerformed
@@ -500,6 +515,10 @@ public class TelaEstoque extends javax.swing.JFrame {
         conex.desconecta();
         jBtnEditar.setEnabled(true);
         jBtnExcluir.setEnabled(true);
+        jBtnCancelar.setEnabled(true);
+        jBtnNovo.setEnabled(false);
+        jTxtNome.setEnabled(false);
+        jBtnPesquisar.setEnabled(false);
     }//GEN-LAST:event_jTProdutosMouseClicked
 
     private void jBtnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSairActionPerformed
@@ -543,13 +562,13 @@ public class TelaEstoque extends javax.swing.JFrame {
         }
         ModeloTabela modelo = new ModeloTabela(dados, colunas);
         jTProdutos.setModel(modelo);
-        jTProdutos.getColumnModel().getColumn(0).setPreferredWidth(180);
+        jTProdutos.getColumnModel().getColumn(0).setPreferredWidth(130);
         jTProdutos.getColumnModel().getColumn(0).setResizable(false);
-        jTProdutos.getColumnModel().getColumn(1).setPreferredWidth(92);
+        jTProdutos.getColumnModel().getColumn(1).setPreferredWidth(90);
         jTProdutos.getColumnModel().getColumn(1).setResizable(false);
-        jTProdutos.getColumnModel().getColumn(2).setPreferredWidth(92);
+        jTProdutos.getColumnModel().getColumn(2).setPreferredWidth(90);
         jTProdutos.getColumnModel().getColumn(2).setResizable(false);
-        jTProdutos.getColumnModel().getColumn(3).setPreferredWidth(92);
+        jTProdutos.getColumnModel().getColumn(3).setPreferredWidth(71);
         jTProdutos.getColumnModel().getColumn(3).setResizable(false);
         jTProdutos.getTableHeader().setReorderingAllowed(false);
         jTProdutos.setAutoResizeMode(jTProdutos.AUTO_RESIZE_OFF);
@@ -599,6 +618,7 @@ public class TelaEstoque extends javax.swing.JFrame {
     private javax.swing.JButton jBtnNovo;
     private javax.swing.JButton jBtnPesquisar;
     private javax.swing.JButton jBtnSair;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLblImg;
     private javax.swing.JPanel jPanel3;

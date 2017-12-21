@@ -41,6 +41,7 @@ public class TelaCliente extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanelGeral = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         jPanelRegistro = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jTxtNome = new javax.swing.JTextField();
@@ -62,11 +63,17 @@ public class TelaCliente extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setBackground(new java.awt.Color(204, 204, 204));
         setSize(new java.awt.Dimension(300, 300));
 
+        jPanelGeral.setBackground(new java.awt.Color(204, 204, 204));
         jPanelGeral.setLayout(null);
 
-        jPanelRegistro.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Clientes Cadastrados", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 0, 255))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon 64.png"))); // NOI18N
+        jPanelGeral.add(jLabel4);
+        jLabel4.setBounds(354, 0, 70, 60);
+
+        jPanelRegistro.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Cadastrar Clientes", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jPanelRegistro.setOpaque(false);
 
         jPanel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -74,13 +81,7 @@ public class TelaCliente extends javax.swing.JFrame {
         jPanel3.setLayout(null);
 
         jTxtNome.setFont(new java.awt.Font("Gill Sans MT", 0, 10)); // NOI18N
-        jTxtNome.setForeground(new java.awt.Color(184, 108, 39));
         jTxtNome.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTxtNome.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtNomeActionPerformed(evt);
-            }
-        });
         jPanel3.add(jTxtNome);
         jTxtNome.setBounds(200, 180, 140, 19);
 
@@ -95,11 +96,11 @@ public class TelaCliente extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jTxtId);
-        jTxtId.setBounds(341, 0, 40, 20);
+        jTxtId.setBounds(340, 50, 40, 20);
 
         jTxtCPF.setFont(new java.awt.Font("Gill Sans MT", 0, 10)); // NOI18N
-        jTxtCPF.setForeground(new java.awt.Color(184, 108, 39));
         jTxtCPF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTxtCPF.setEnabled(false);
         jTxtCPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTxtCPFActionPerformed(evt);
@@ -129,91 +130,91 @@ public class TelaCliente extends javax.swing.JFrame {
         jBtnNovo.setBackground(new java.awt.Color(0, 0, 255));
         jBtnNovo.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnNovo.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Novo.png"))); // NOI18N
-        jBtnNovo.setText("Novo");
+        jBtnNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/novo.png"))); // NOI18N
         jBtnNovo.setBorder(null);
         jBtnNovo.setBorderPainted(false);
         jBtnNovo.setContentAreaFilled(false);
-        jBtnNovo.setOpaque(false);
+        jBtnNovo.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/novo selecionado.png"))); // NOI18N
+        jBtnNovo.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/novo mouse.png"))); // NOI18N
         jBtnNovo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnNovoActionPerformed(evt);
             }
         });
         jPanel3.add(jBtnNovo);
-        jBtnNovo.setBounds(20, 40, 110, 23);
+        jBtnNovo.setBounds(40, 10, 77, 37);
 
         jBtnEditar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnEditar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnEditar.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Editar.png"))); // NOI18N
-        jBtnEditar.setText("Editar");
+        jBtnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/editar.png"))); // NOI18N
         jBtnEditar.setBorder(null);
         jBtnEditar.setBorderPainted(false);
         jBtnEditar.setContentAreaFilled(false);
         jBtnEditar.setEnabled(false);
-        jBtnEditar.setOpaque(false);
+        jBtnEditar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/editar selecionado.png"))); // NOI18N
+        jBtnEditar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/editar mouse.png"))); // NOI18N
         jBtnEditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnEditarActionPerformed(evt);
             }
         });
         jPanel3.add(jBtnEditar);
-        jBtnEditar.setBounds(20, 70, 110, 23);
+        jBtnEditar.setBounds(40, 50, 77, 37);
 
         jBtnCancelar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnCancelar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnCancelar.setForeground(new java.awt.Color(255, 255, 255));
         jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Cancelar.png"))); // NOI18N
-        jBtnCancelar.setText("Cancelar");
         jBtnCancelar.setBorder(null);
         jBtnCancelar.setBorderPainted(false);
         jBtnCancelar.setContentAreaFilled(false);
         jBtnCancelar.setEnabled(false);
-        jBtnCancelar.setOpaque(false);
+        jBtnCancelar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/cancelar selecionado.png"))); // NOI18N
+        jBtnCancelar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/cancelar mouse.png"))); // NOI18N
         jBtnCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnCancelarActionPerformed(evt);
             }
         });
         jPanel3.add(jBtnCancelar);
-        jBtnCancelar.setBounds(20, 100, 110, 23);
+        jBtnCancelar.setBounds(40, 90, 77, 35);
 
         jBtnSalvar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnSalvar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnSalvar.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Salvar.png"))); // NOI18N
-        jBtnSalvar.setText("Salvar");
+        jBtnSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/salvar.png"))); // NOI18N
         jBtnSalvar.setBorder(null);
         jBtnSalvar.setBorderPainted(false);
         jBtnSalvar.setContentAreaFilled(false);
         jBtnSalvar.setEnabled(false);
-        jBtnSalvar.setOpaque(false);
+        jBtnSalvar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/salvar selecionado.png"))); // NOI18N
+        jBtnSalvar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/salvar mouse.png"))); // NOI18N
         jBtnSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnSalvarActionPerformed(evt);
             }
         });
         jPanel3.add(jBtnSalvar);
-        jBtnSalvar.setBounds(20, 130, 110, 23);
+        jBtnSalvar.setBounds(40, 130, 77, 35);
 
         jBtnExcluir.setBackground(new java.awt.Color(0, 0, 255));
         jBtnExcluir.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnExcluir.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Excluir.png"))); // NOI18N
-        jBtnExcluir.setText("Excluir");
+        jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/excluir.png"))); // NOI18N
         jBtnExcluir.setBorder(null);
         jBtnExcluir.setBorderPainted(false);
         jBtnExcluir.setContentAreaFilled(false);
         jBtnExcluir.setEnabled(false);
-        jBtnExcluir.setOpaque(false);
+        jBtnExcluir.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/excluir selecionado.png"))); // NOI18N
+        jBtnExcluir.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/excluir mouse.png"))); // NOI18N
         jBtnExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnExcluirActionPerformed(evt);
             }
         });
         jPanel3.add(jBtnExcluir);
-        jBtnExcluir.setBounds(20, 160, 110, 23);
+        jBtnExcluir.setBounds(40, 170, 79, 35);
 
         javax.swing.GroupLayout jPanelRegistroLayout = new javax.swing.GroupLayout(jPanelRegistro);
         jPanelRegistro.setLayout(jPanelRegistroLayout);
@@ -231,10 +232,9 @@ public class TelaCliente extends javax.swing.JFrame {
         jPanelGeral.add(jPanelRegistro);
         jPanelRegistro.setBounds(10, 10, 400, 250);
 
-        jPanelTabela.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Clientes Cadastrados", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 0, 255))); // NOI18N
+        jPanelTabela.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Clientes Cadastrados", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jPanelTabela.setOpaque(false);
 
-        jTClientes.setBackground(new java.awt.Color(204, 204, 204));
         jTClientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
@@ -261,46 +261,49 @@ public class TelaCliente extends javax.swing.JFrame {
         );
         jPanelTabelaLayout.setVerticalGroup(
             jPanelTabelaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
         );
 
         jPanelGeral.add(jPanelTabela);
-        jPanelTabela.setBounds(10, 300, 400, 160);
+        jPanelTabela.setBounds(10, 290, 400, 150);
 
         jBtnPesquisar.setBackground(new java.awt.Color(0, 0, 255));
         jBtnPesquisar.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 11)); // NOI18N
         jBtnPesquisar.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Pesquisar.png"))); // NOI18N
-        jBtnPesquisar.setText("Pesquisar");
+        jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/pesquisar.png"))); // NOI18N
         jBtnPesquisar.setBorder(null);
         jBtnPesquisar.setBorderPainted(false);
         jBtnPesquisar.setContentAreaFilled(false);
-        jBtnPesquisar.setOpaque(false);
+        jBtnPesquisar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jBtnPesquisar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/pesquisar selecionado.png"))); // NOI18N
+        jBtnPesquisar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/pesquisar mouse.png"))); // NOI18N
         jBtnPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnPesquisarActionPerformed(evt);
             }
         });
         jPanelGeral.add(jBtnPesquisar);
-        jBtnPesquisar.setBounds(300, 270, 120, 23);
+        jBtnPesquisar.setBounds(320, 260, 79, 37);
 
         jBtnSair.setBackground(new java.awt.Color(0, 0, 255));
         jBtnSair.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Sair.png"))); // NOI18N
+        jBtnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/sair.png"))); // NOI18N
         jBtnSair.setBorderPainted(false);
         jBtnSair.setContentAreaFilled(false);
-        jBtnSair.setOpaque(false);
+        jBtnSair.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Sair selecionado.png"))); // NOI18N
+        jBtnSair.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/sair mouse.png"))); // NOI18N
         jBtnSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnSairActionPerformed(evt);
             }
         });
         jPanelGeral.add(jBtnSair);
-        jBtnSair.setBounds(110, 470, 200, 109);
+        jBtnSair.setBounds(160, 440, 80, 43);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/madeira.jpg"))); // NOI18N
+        jLabel2.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/fundo principal.jpg"))); // NOI18N
         jPanelGeral.add(jLabel2);
-        jLabel2.setBounds(0, 0, 420, 500);
+        jLabel2.setBounds(0, -20, 420, 530);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -310,20 +313,16 @@ public class TelaCliente extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelGeral, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
+            .addComponent(jPanelGeral, javax.swing.GroupLayout.DEFAULT_SIZE, 488, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(436, 539));
+        setSize(new java.awt.Dimension(436, 527));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTxtCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtCPFActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTxtCPFActionPerformed
-
-    private void jTxtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtNomeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtNomeActionPerformed
 
     private void jTxtIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtIdActionPerformed
         // TODO add your handling code here:
@@ -346,7 +345,7 @@ public class TelaCliente extends javax.swing.JFrame {
             jBtnCancelar.setEnabled(false);
             jBtnEditar.setEnabled(false);
             jTxtCPF.setEnabled(false);
-            preencherTabela("select *from clientes order by nome_cliente");
+            preencherTabela("select *from clientes where id_cliente > 1 order by nome_cliente");
         }else{
             mod.setNome(jTxtNome.getText());
             mod.setCpf(jTxtCPF.getText());
@@ -357,7 +356,7 @@ public class TelaCliente extends javax.swing.JFrame {
             jBtnCancelar.setEnabled(false);
             jBtnEditar.setEnabled(false);
             jTxtCPF.setEnabled(false);
-            preencherTabela("select *from clientes order by nome_cliente");
+            preencherTabela("select *from clientes where id_cliente > 1 order by nome_cliente");
         }
     }//GEN-LAST:event_jBtnSalvarActionPerformed
 
@@ -376,6 +375,7 @@ public class TelaCliente extends javax.swing.JFrame {
         flag=1;
         jBtnSalvar.setEnabled(true);
         jBtnCancelar.setEnabled(true);
+        jBtnPesquisar.setEnabled(false);
         jTxtCPF.setEnabled(true);
         jTxtCPF.setText("");
         jTxtNome.setText("");
@@ -396,9 +396,9 @@ public class TelaCliente extends javax.swing.JFrame {
         }
         ModeloTabela modelo = new ModeloTabela(dados, colunas);
         jTClientes.setModel(modelo);
-        jTClientes.getColumnModel().getColumn(0).setPreferredWidth(243);
+        jTClientes.getColumnModel().getColumn(0).setPreferredWidth(276);
         jTClientes.getColumnModel().getColumn(0).setResizable(false);
-        jTClientes.getColumnModel().getColumn(1).setPreferredWidth(100);
+        jTClientes.getColumnModel().getColumn(1).setPreferredWidth(105);
         jTClientes.getColumnModel().getColumn(1).setResizable(false);
         jTClientes.getTableHeader().setReorderingAllowed(false);
         jTClientes.setAutoResizeMode(jTClientes.AUTO_RESIZE_OFF);
@@ -432,6 +432,7 @@ public class TelaCliente extends javax.swing.JFrame {
         conex.desconecta();
         jBtnEditar.setEnabled(true);
         jBtnExcluir.setEnabled(true);
+        jBtnCancelar.setEnabled(true);
     }//GEN-LAST:event_jTClientesMouseClicked
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
@@ -441,7 +442,7 @@ public class TelaCliente extends javax.swing.JFrame {
             mod.setCpf((jTxtCPF.getText()));
             control.Excluir(mod);
         }   
-        preencherTabela("select *from clientes order by nome_cliente");
+        preencherTabela("select *from clientes where id_cliente > 1 order by nome_cliente");
         jBtnExcluir.setEnabled(false);
         jBtnEditar.setEnabled(false);
         jTxtNome.setText("");
@@ -470,9 +471,9 @@ public class TelaCliente extends javax.swing.JFrame {
         }
         ModeloTabela modelo = new ModeloTabela(dados, colunas);
         jTClientes.setModel(modelo);
-        jTClientes.getColumnModel().getColumn(0).setPreferredWidth(243);
+        jTClientes.getColumnModel().getColumn(0).setPreferredWidth(276);
         jTClientes.getColumnModel().getColumn(0).setResizable(false);
-        jTClientes.getColumnModel().getColumn(1).setPreferredWidth(100);
+        jTClientes.getColumnModel().getColumn(1).setPreferredWidth(105);
         jTClientes.getColumnModel().getColumn(1).setResizable(false);
         jTClientes.getTableHeader().setReorderingAllowed(false);
         jTClientes.setAutoResizeMode(jTClientes.AUTO_RESIZE_OFF);
@@ -525,6 +526,7 @@ public class TelaCliente extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLblImg;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanelGeral;
