@@ -86,7 +86,8 @@ public class TelaLogin extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(170, 240, 77, 35);
 
-        JtxtUsuario.setForeground(new java.awt.Color(204, 204, 204));
+        JtxtUsuario.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        JtxtUsuario.setForeground(new java.awt.Color(153, 153, 153));
         JtxtUsuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         JtxtUsuario.setText("Usuario");
         JtxtUsuario.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -97,7 +98,8 @@ public class TelaLogin extends javax.swing.JFrame {
         jPanel1.add(JtxtUsuario);
         JtxtUsuario.setBounds(100, 160, 140, 30);
 
-        jPasswordField1.setForeground(new java.awt.Color(204, 204, 204));
+        jPasswordField1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jPasswordField1.setForeground(new java.awt.Color(153, 153, 153));
         jPasswordField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPasswordField1.setText("usuario");
         jPasswordField1.addFocusListener(new java.awt.event.FocusAdapter() {
