@@ -301,7 +301,7 @@ public class TelaCliente extends javax.swing.JFrame {
         jBtnSair.setBounds(160, 440, 80, 43);
 
         jLabel2.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/fundo principal.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/fundo principal2.jpg"))); // NOI18N
         jPanelGeral.add(jLabel2);
         jLabel2.setBounds(0, -20, 420, 530);
 

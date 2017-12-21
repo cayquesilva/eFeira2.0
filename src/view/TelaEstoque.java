@@ -325,7 +325,7 @@ public class TelaEstoque extends javax.swing.JFrame {
         jPanelGeral.add(jBtnSair);
         jBtnSair.setBounds(170, 450, 80, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/fundo principal.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/fundo principal2.jpg"))); // NOI18N
         jPanelGeral.add(jLabel1);
         jLabel1.setBounds(0, 0, 420, 490);
 
